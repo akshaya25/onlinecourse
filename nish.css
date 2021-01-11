@@ -1,0 +1,107 @@
+body{
+  background-color: #fff6f6;
+ 
+}
+}
+h1{
+  text-align: center;
+}
+h4{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media (min-width: 750px){
+  header{
+    text-align: left;
+  }
+}
+
+.icono
+{
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 60px;
+  background-size: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+@media (min-width: 750px)
+{
+  .icono
+  {
+    margin-bottom: 0;
+  }
+
+
+#lista-cursos .row{
+  margin-bottom: 20px;
+}
+.agregar-carrito
+{
+  margin: 10px 0;
+}
+.card
+{
+  text-align: center;
+  border: 1px solid #e1e1e1;
+  background: white;
+}
+}
+@media (min-width: 550px){
+	
+  .card
+  {
+    text-align: left;
+  }
+
+.info-card{
+  padding: 10px 20px;
+  p
+    margin-bottom: 5px;
+  
+}
+.card h4
+{
+  margin-bottom: 5px;
+}
+.info-card .precio
+{
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 10px;
+  span
+    font-weight: 700;
+    font-size: 22px;
+}
+.footer
+{
+  margin-top: 40px;
+  border-top: 1px solid #aaa;
+  padding-top: 40px;
+  background: silver;
+}
+  .menu a
+  {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.container{
+
+
+position: absolute;
+
+transform: tramnslate(-50%, -50%);
+}

@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+@import "compass";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+$border-radius: 20px;
+
+$button-padding: 15px;
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+
+
+
+  }
+
+
+  li,a,button{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    font-size: 21.5px;
+	margin-top: 10%;
+  }
+
+  header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px 60px;
+    transition: 0.6s;
+
+  }
+
+
+  header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  header ul li{
+    position: relative;
+ list-style: none;
+  }
+  header ul li a{
+    position: relative;
+    text-decoration: none;
+    margin: 0 15px;
+    color: #2F4858;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    font-weight: 500;
+  }
+
+
+  header ul li a:hover{
+    position: relative;
+    text-decoration: none;
+    margin: 0 15px;
+    color: #c3d1cb;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    font-weight: 500;
+  }
+body{
+  height:200vh;
+  margin: 0px;
+  padding: 0px;
+  color: #2F4858;
+  font-family: "Montserrat",sans-serif;
+
+
+}
+
+
+.fwh-slide{
+
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #F9F871;
+}
+
+
+.Container {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%,-50%);
+}
+
+.Container p{
+  border-right: .15em solid orange;
+  font-size: 35px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 4s steps(60, end);
+
+
+}
+
+.Container p:nth-child(1) {
+  width: 17em;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+ }
+.Container p:nth-child(2) {
+  width: 17em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+}
+
+.Container p:nth-child(3) {
+  width: 17em;
+  opacity: 0;
+  -webkit-animation: type3 2s steps(40, end);
+  animation: type3 2s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+}
+
+
+
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+
+@keyframes blink {
+0%{
+  opacity: 0;
+}
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0%{
+    opacity: 0;
+  }
+    100% {
+      opacity: 1;
+    }
+}
+.fwh-slide2 {
+
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url(222.jpg) no-repeat;
+ 
+}
+
+.Container1 h2{
+  font-size: 40px;
+  color: white;
+  position: relative;
+  top: 150%;
+  margin-bottom: 10%;
+  margin-left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+.Container1 {
+  position: absolute;
+  top: 150%;
+  left: 30%;
+  margin-left: 3%;
+  margin-top: -5%;
+  transform: translate(-50%,-50%);
+}
+
+
+.Container1 p{
+
+  font-size: 25px;
+  white-space: wrap;
+  overflow: hidden;
+color: white;
+margin-left: 10%;
+
+}
+.Containerimg1 {
+	width: 500px;
+height: 500px;
+margin-top: -25%;
+margin-right: -20%;
+}
+
+
+
+.Containerimg {
+  position: absolute;
+  top: 130%;
+  right: 3%;
+
+
+  transform: translate(-50%,-50%);
+}
+
+
+
+.fwh-slide3{
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url(333.jpg) no-repeat;
+}
+
+
+.Container2 {
+
+  position: absolute;
+  top: 250%;
+  left: 35%;
+  transform: translate(-50%,-50%);
+
+}
+.Container2 h2{
+  font-size: 40px;
+  color:white;
+  position: relative;
+  top: 150%;
+  margin-bottom: 1rem;
+  transform: translate(-50%,-50%);
+ margin-left: 50%;
+}
+.Container2 p{
+
+  font-size: 35px;
+  white-space: nowrap;
+  overflow: hidden;
+	color:white;
+
+}
+
+.fwh-slide4 {
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+
+    background: url(10.jpg) no-repeat;
+
+}
+
+
+.Container3 {
+
+  position: absolute;
+  top: 350%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+}
+
+.Container3 p{
+
+  font-size: 35px;
+  white-space: nowrap;
+  overflow: hidden;
+
+
+}
+
+.Containericons {
+  position: absolute;
+  top: 350%;
+  left: 75%;
+  transform: translate(-50%,-50%);
+  
+}
+
+.Containericons h3{
+margin-top: -100%;
+  font-size: 40px;
+  color: white;
+  position: relative;
+  transform: translate(-50%,-50%);
+   margin-left: -100%;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 10%;
+}
+
+
+.fa-stack:hover{
+  opacity: 0.7;
+  color: #fff;
+}
+
+
+
+
+.wrapper {
+	background: url(111.jpg) no-repeat;
+	background-size: cover;
+	height: 100vh;
+
+}
+.navbar {
+	height: 80px;
+	width: 100%;
+	background: rgba(0,0,0,0.4);
+}
+.log {
+ width: 100px;
+ height: 80%;
+ padding: 20px 100px;
+}
+	
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li {
+ list-style: none;
+ margin:0 8px;
+ display: inline-block;
+ line-height: 80px;
+}
+.navbar ul li a{
+ text-decoration: none;
+ color: white;
+ font-size: 20px;
+ padding: 6px 13px;
+ font-family: 'Roboto',sans-serif;
+ transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: blue;
+	border-radius: 2px;
+} 
+.wrapper .center{
+ position: absolute;
+ top: 50%;
+ left: 55%;
+ transform: translate(-50%, -50%);
+ font-family: sans-serif;
+ user-select: none;
+}
+.center h1{
+ color: black;
+ font-size: 70px;
+ font-weight: bold;
+ margin-left: -10%;
+ width: 900px;
+ text-align: center;
+}
+.center h5{
+ color: white;
+ font-size: 50px;
+ font-weight: bold;
+ width: 885px;
+ margin-top: 10px;
+ text-align: center;
+}
+.center .buttons{
+margin: 35px 280px;
+}
+.buttons button {
+	height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffb3b3;
+	background: black;
+	border: 1px solid #00bfbc;
+	outline: none;
+	cursor: pointer;
+	border-radius: 25px;
+	transition: .5s;
+}
+.buttons button:hover{
+background: #00bfbc;
+}
+
+
+
+
+
+
+
+{box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: transparent;
+  
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 140%;
+  visibility: show;
+margin-left: 6%;
+margin-top: 15%;
+}
+
+td, th {
+  border: 4px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  color: white;
+ 
+}
+
